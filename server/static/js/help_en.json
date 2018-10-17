@@ -1,0 +1,145 @@
+[
+    {
+        "type": "Connection problem",
+        "items": [
+            {
+                "title": "What platforms does Nuts VPN support and where to download it",
+                "content": "Nuts VPN currently supports four platforms including android, IOS, PC and MAC. You can download the corresponding version on nutty accelerator website.Nuts vpn website: https://www.nutsvpn.com"
+            },
+            {
+                "title": "How to try Nuts VPN for free",
+                "content": "Click on the check-in daily to get 15 minutes of free service. From the time of sign-in, you can click on the check-in when you need to use it. The free time cannot be used cumulatively."
+            },
+            {
+                "title": "How to connect after downloading and installing",
+                "content": "Please click the 'Nuts VPN' logo map in the middle of the homepage of the mobile phone APP. After clicking, 'connected' can be displayed at the bottom of the logo for normal use.PC client can be normally used by clicking the start diagram on the right side of the homepage, and then the service can be disconnected by clicking again."
+            },                         
+            {
+                "title": "What should you pay attention to when installing the Nuts VPN for the first time",
+                "content": "IOS version needs to select 'allow' and then use the user's fingerprint to verify the connection. After successful connection, the VPN icon will appear on the top of the phone.The first installation of MAC version needs to input the password of APP ID to be verified before installation.When installing PC version, if the security software appears the intercept prompt, need to click to allow all the operation options of the program;When installing the android version, you need to agree to use the relevant system permissions."
+            },
+            {
+            	"title": "How to solve the problem that the Nuts VPNPC version is blocked by security software such as 360 when running",
+            	"content": "First click to no longer remind the checkbox, then click to allow all actions of the program. The most radical solution is to add the.exe files in the Nuts VPN installation directory to the whitelist of security software"
+            },
+            {
+            	"title": "How to make the Nuts VPN a whitelist of 360 security guards' trust",
+            	"content": "<a href='/doc/az.html' target='_blank'>document</a>"
+            },
+            {
+            	"title": "How to solve the problem of incompatibility of some browsers when the Nuts VPPC is running",
+            	"content": "Most foreign web sites use new features like HTML5 when over the wall is used, so it is recommended to use Chrome because of its compatibility."
+            },
+            {
+            	"title": "Compatible versions of various devices",
+            	"content": "Nuts VPN PC supports WIN7 and above P;Nuts VPN android version support android4.4 and above;IOS version supports IOS9.3.3 and above;IPad version is supported at 9.3.3 and above (Ipadair and later devices are supported);The MAC version supports more than 10.12."
+            },
+            {
+            	"title": "Some users have other VPN software installed on their computers or mobile phones",
+            	"content": "At present, computers and mobile phones can not use both VPN software. If there is any other browser plug-in type VPN on the computer, please stop or uninstall it and restart the browser and try again. If not, restart the computer and try again. If there are other VPNS on the phone, it is recommended to disable or uninstall them"
+            },
+            {
+            	"title": "Click the connect button to not connect the Nuts VPN",
+            	"content": "1. Check whether the type of service purchased by your account has expired or the free time has been used up; if so, you can continue to use the service after purchase2. Check the version: update or download the latest version of the accelerator for reuse3. Whether to open VPN access on mobile phoneTry switching between networks (WiFi or 4G)5. After exiting the accelerator, clear the accelerator process and try to re-enter the accelerator connectionTurn on flight mode and turn it offTry rebooting your phone or router"
+            },
+            {
+            	"title": "The mobile phone can not be connected to the Internet",
+            	"content": "Check the version: update or download the latest version of the accelerator for reuse2. Check whether the Nuts VPN process has been cleared backstageTry switching networks (WiFi or 4G)4. After exiting the accelerator, clear the accelerator process and try to re-enter the accelerator connectionTurn on flight mode and turn it offTry rebooting your phone or router"
+            },
+            {
+            	"title": "Computer version of the connection after the network",
+            	"content": "Restart your computerSwitch to another browser3. Disable the security software or anti-virus software and try again4. See the document for other solutions (click to see jianguo desktop problem location analysis 1.0)"
+            },
+            {
+            	"title": "Why can't some foreign websites visit",
+            	"content": "Nuts VPN does not support accessing some communication apps such as WhatsApp, messenger and line.If other websites cannot be accessed, you can manually add the website configuration or add the QQ group 666858831 to our customer service for processing"
+            },
+            {
+            	"title": "How does computer end telegram don't top to do",
+            	"content": "The computer terminal telegram needs to be set. Please click 'install' to view the document"
+            },
+            {
+            	"title": "How to display 'network busy'",
+            	"content": "Check the version: update or download the latest version of the accelerator for reuseTry switching between networks (WiFi or 4G)3. After exiting the accelerator, clear the accelerator process and try to re-enter the accelerator connectionTurn on flight mode and turn it offTry rebooting your phone"
+            },
+            {
+            	"title": "VPNS always go out of the way, or they can't get into the program",
+            	"content": "1. Official maintenance: please follow the official website to announce whether the VPN is under maintenance2. Whether it is the latest version: update the VPN to the latest version"
+            }
+        ]
+    },
+    {
+        "type": "top-up",
+        "items": [
+            {
+            	"title": "How to recharge and renew",
+            	"content": "Click 'top up' on the mobile phone and select the number of diamonds to be purchased. The phone will automatically jump to alipay and select payment.Click 'quick purchase' on the computer, select the number of diamonds to be purchased, and scan the qr code of mobile phone alipay to complete the payment."
+            },
+            {
+            	"title": "Recharge failure how to solve",
+            	"content": "If you fail to recharge, wait for about 5 minutes before recharging. If you still can't recharge, you can also join the QQ group 666858831 private chat our customer service, we will individually solve for you."
+            },
+            {
+            	"title": "Can't top up account how to do",
+            	"content": "After the value of the package may be delayed to the account. If it does not arrive for a long time, you can join the QQ group 666858831 to send the screenshot of the payment prepaid order to our customer service. We will solve it separately for you."
+            },
+            {
+            	"title": "Why are surplus diamonds automatically deducted",
+            	"content": "Every purchase services have valid for 24 hours, if you are valid until 24 hours after not disconnect 'lads' Mags' including Nuts VPN connection button, the system will automatically default you also want to continue to use the service, will help you automatically deduct the diamond on the account purchase a current use of service, if you don't want to buy again the service, please disconnect the nut button in front of the validity period. If you do not have enough diamonds on your account, the nut will be automatically disconnected and cannot be used."
+            },
+            {
+            	"title": "Nut accelerator provides service type",
+            	"content": "At present, it is divided into two kinds: ordinary service and advanced service. General service 1 drill day, advanced service 3 drill day. A service type is free to use the service for 24 hours after a charge is deducted once."
+            },
+            {
+            	"title": "The difference between regular and advanced services",
+            	"content": "Ordinary services are suitable for general web pages and picture browsing, such as accessing websites such as Facebook and Twitter, and using communication tools such as telegram. In addition to web browsing, the advanced service also supports viewing hd video. If you want faster Internet speeds and a smoother experience, you are advised to connect to premium services."
+            },
+            {
+            	"title": "How to change service type",
+            	"content": "Click 'user service' to open the service list and select the type of service you need to switch. If you choose the type of service you have purchased, you do not have to pay any more; if you choose another service type, you will have to pay extra"
+            },
+            {
+            	"title": "What is the term of service purchased",
+            	"content": "PC and MAC see the expiry time directly under 'current service' on the main interface; The mobile version needs to click 'current service' in the middle of the main interface to enter the service selection interface, and you can see the 'expiry date' related prompts under each service."
+            },
+            {
+            	"title": "Can you select the route manually",
+            	"content": "The Nuts VP service includes many acceleration nodes around the world. With just clicking the connection, the system will intelligently select the node closest to the user for acceleration. No matter what country or software you use, the Nuts VP will automatically switch you to the relevant region."
+            },
+            {
+            	"title": "Promotion code",
+            	"content": "Every Nuts VPN user has a promotion code. Once your promotion code is bound by the new user, both parties will get rich rewards."
+            },
+            {
+            	"title": "Monthly package seasonal package year issue",
+            	"content": "A year is not a diamond. Nuts VPN for mobile phone, please click 'current service' on the main interface to enter the service selection interface and check the validity period of the service type you purchased. For computer version nuts, please click 'user service' on the upper left of the main interface to enter the service selection interface to check the validity period of the service type you purchased"
+            },
+            {
+            	"title": "The payment channel",
+            	"content": "At present only pay treasure to pay. We have added new payment methods in the later version. We hope you will be patient and thank you for your support for the Nuts VPN."
+            }                                     
+        ]
+    },
+    {
+        "type": "account password",
+        "items": [
+            {
+            	"title": "How to modify the account",
+            	"content": "Click 'my' in the lower left corner of the main interface to enter the user center, and click 'modify account' to enter the page of account modification, and the account can be modified according to the prompt. The account number is only allowed to be changed to the domestic mobile phone number."
+            },
+            {
+            	"title": "How to change a password",
+            	"content": "Enter the user center at the bottom left corner of the interface and click 'change password' to enter the page for changing password. You can change the password according to the prompt. The password can only be changed after the account has been changed to mobile phone number."
+            },
+            {
+            	"title": "Forgot password",
+            	"content": "Click 'mine' in the lower left corner of the main interface to enter the user center, click 'switch account' to enter the account login page, click 'forget password', input the phone number used for registration according to the prompt, fill in the obtained verification code, and re-enter the new password to complete the password modification."
+            },
+            {
+            	"title": "Can an account log on to any device",
+            	"content": "Yes, but only one device can be logged in at the same time. If multiple devices are logged in at the same time, the previously logged devices will be kicked offline. Devices include: Android, iOS, Windows and MacOS terminals."
+            }
+        ]
+    }
+]

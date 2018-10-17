@@ -1,0 +1,48 @@
+.m-section2 ul {
+  width: 1000px;
+  margin: 0 auto;
+}
+.m-section2 ul li {
+  display: inline-block;
+  width: 498px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+.m-section2 ul li a {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.m-section2 ul li a i {
+  width: 45px;
+  height: 37px;
+  display: inline-block;
+}
+.m-section2 ul li a span {
+  margin-left: 10px;
+}
+.m-section2 ul li:first-child i {
+  background: url(../../images/p-contactus-weibo.png) no-repeat;
+}
+.m-section2 ul li:last-child i {
+  width: 33px;
+  height: 39px;
+  background: url(../../images/p-contactus-qq.png) no-repeat;
+}

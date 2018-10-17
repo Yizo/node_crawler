@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="renderer" content="webkit">
+		<meta name="keywords" content="坚果 桌面端"/>
+		<title>nuts桌面端问题定位分析</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background: #fafafa;
+			}
+			.main{
+				width: 50%;
+				color: #000;
+				margin: 0 auto;
+				background: #fff;
+				padding: 10px;
+				border: 1px solid #ddd;
+			}
+			h1{
+				text-align: center;
+			}
+			.main dl dd{
+				color: #7b797b;
+				line-height: 150%;
+			}
+			@media screen and (max-width: 1024px) {
+			    .main {
+			        width: 80%;
+			    }
+			}
+			@media screen and (max-width: 960px) {
+			    .main {
+			        width: 90%;
+			    }
+			}
+			img{
+			  display: inline-block;
+			  height: auto;
+			  max-width: 100%;				
+			}			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>nuts桌面端问题定位分析</h1>
+			<div>
+				<h3>一. 程序完整性检查</h3>
+				<dl>
+					<dt>1.文件是否齐全</dt>
+					<dd>
+						1.0.4版本以后完整程序包含</br>
+						windows: svpn.exe, LimaoUI.exe, regproxy.exe, LimaoUpdateV2.exe</br>
+						mac: svpn, Limao, proxy, regproxy, LimaoUpdateV2, install_helper.sh</br>
+						这些文件必须放到同一级目录下						
+					</dd>
+				</dl>	
+				<dl>
+					<dt>2.是否运行正确</dt>
+					<dd>
+						nuts运行时在任务管理器里会有LimaoUI和svpn两个进程(没开代理时svpn不运行)，如果缺一个则代理不能成功，一般情况下svpn无法运行都是文件丢失，如已运行则查看8118和8838端口是否被其它应用占用
+						windows: netstat -aon|findstr "8118"</br>
+						mac: sudo lsof -i :8118</br>
+						如有其它进程占用端口需要关闭占用程序</br>
+					</dd>
+				</dl>
+				<dl>
+					<dt>3.被其它安全防护软件禁用</dt>
+					<dd>
+						保证在坚果运行的时候如果有360等软件弹出许可提示时要选择同意，并且选以后都不再提示，如果不小心点了拒绝，要恢复设置就比较麻烦，需要自行参考相应软件的安全设置方法。					
+					</dd>
+				</dl>				
+			</div>
+			<div>
+				<h3>二. 开启加速以后检查</h3>
+				<dl>
+					<dt>1.代理设置是否成功(windows)</dt>
+					<dd>
+						internet选项-->连接-->局域网设置-->使用自动配置脚本   是否为已选择状态(如图2-1-1)</br>
+						windows: svpn.exe, LimaoUI.exe, regproxy.exe, LimaoUpdateV2.exe</br>
+						mac: svpn, Limao, proxy, regproxy, LimaoUpdateV2, install_helper.sh</br>
+						这些文件必须放到同一级目录下</br>	
+						<img src="/images/assistance/lm_2-1-1.png" alt="" />
+						<p>图2-1-1</p>
+					</dd>
+					<dd>
+						代理设置(mac)</br>偏好设置-->网络-->对应的网络连接-->高级...-->代理-->自动代理配置(如图2-1-2)</br>
+						格式如图所示，结尾需为xx_xxx.pac</br>
+						如若设置不成功最有可能的原因是运行时被安全防护类软件阻挡了，需要修改相应防护软件设置，添加坚果安装后所在文件夹的信任列表</br>
+						其次对于windows平台也有可能是用户修改对应注册表的权限不足，需要修改用户权限或者手动设置用户注册表</br>
+						<img src="/images/assistance/lm_2-1-2.png" alt="" />
+						<p>图2-1-2</p>
+					</dd>
+				</dl>	
+				<dl>
+					<dt>2.注册表项及相应功能(windows)</dt>
+					<dd>
+						程序运行时务必要保证用户有修改注册表的权限，命令行输入regedit可以开启命令行编辑</br><img src="/images/assistance/lm_2-2-1.png" alt="" /></br>
+						此项注册表用于设置图(2-1-1/2)的代理地址</br><img src="/images/assistance/lm_2-2-2.png" alt="" /></br>
+						此注册表项用于设置启用http代理，如首次未设置成1则需添加设置后重启电脑一次，以后不恢复原有设置则可一直生效。</br><img src="/images/assistance/lm_2-2-3.png" alt="" />
+					</dd>
+				</dl>				
+			</div>			
+		</div>
+	</body>
+</html>

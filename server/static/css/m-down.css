@@ -1,0 +1,82 @@
+.m-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(90%);
+  margin: 10px auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.m-section1 img {
+  display: block;
+  max-width: 100%;
+}
+.m-section1 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.m-section1 dl dd {
+  margin-top: 20px;
+}
+.m-section1 dl dd p {
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+.m-section2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.m-section2 .u-dw {
+  margin-bottom: 40px;
+}
+.m-section2 .u-dw ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.m-section2 .u-dw ul li {
+  text-align: center;
+  margin-top: 50px;
+}
+.m-section2 .u-dw ul li i {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+}
+.m-section2 .u-dw ul li h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.m-section2 .u-dw ul li p {
+  color: #777;
+}
+.m-section2 .u-dw ul li a {
+  display: block;
+  background-color: #4CA8F4;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+.m-section2 .u-dw ul .i-ios i {
+  background: url(../../images/sprite.png) no-repeat -10px -10px;
+}
+.m-section2 .u-dw ul .i-android i {
+  background: url(../../images/sprite.png) no-repeat -120px -10px;
+}
+.m-section2 .u-dw ul .i-windows i {
+  background: url(../../images/sprite.png) no-repeat -230px -10px;
+}
+.m-section2 .u-dw ul .i-mac i {
+  background: url(../../images/sprite.png) no-repeat -340px -10px;
+}

@@ -1,0 +1,138 @@
+.g-bd {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.g-ctn {
+  min-width: 1000px;
+  margin: 0 auto;
+}
+.z-nav-active a {
+  color: #685dfc;
+  position: relative;
+}
+.z-nav-active a:after {
+  content: '';
+  width: 70px;
+  height: 1px;
+  border: 1px solid #685dfc;
+  background-color: #685dfc;
+  position: absolute;
+  top: 88px;
+  left: 50px;
+}
+.z-nav-active a[class="i-long"]:after {
+  left: 35px;
+  width: 100px;
+}
+#header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#header .m-logo {
+  display: inline-block;
+  width: 163px;
+  height: 120px;
+  cursor: pointer;
+}
+#header .m-logo img {
+  display: block;
+  margin-top: 40px;
+}
+#header .m-nav {
+  width: 830px;
+  display: inline-block;
+  line-height: 120px;
+}
+#header .m-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#header .m-nav ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+#header .m-nav ul li h2 {
+  text-align: center;
+}
+#header .m-nav ul li a {
+  display: block;
+  color: #191919;
+  font-size: 21px;
+  font-weight: 500;
+}
+#header .m-nav ul li span {
+  color: #191919;
+  font-size: 21px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#header .m-nav ul li .lang {
+  color: #685dfc;
+}
+#footer {
+  background-color: #292a56;
+  text-align: center;
+  height: 240px;
+}
+#footer ul {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+#footer ul li {
+  display: inline-block;
+  border-right: 1px solid #d4d7d9;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 20px;
+}
+#footer ul li a {
+  color: #d4d7d9;
+}
+#footer ul li:last-child {
+  border-right: transparent;
+}
+#footer p {
+  width: 1200px;
+  margin: 0 auto;
+  color: #9ea2bb;
+  line-height: 150%;
+}
+#footer .u-p1 {
+  padding-top: 38px;
+}
+#footer .u-p2 {
+  padding-bottom: 65px;
+}

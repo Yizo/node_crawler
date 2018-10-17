@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <script src="/js/flexible_css.js"></script>
+    <script src="/js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/m-index.css" />
+    <link rel="stylesheet" href="/css/animate.dist.css">
+</head>
+
+<body>
+<header class="m-header">
+    <img class="logo" src="/images/p_cn_logo.png" alt="坚果VPN">
+    <button class="button"><a class="lang" onclick="SwitchLang('en')">EN</a></button>
+</header>
+<section class="banner">
+        <div>
+            <div class="banner-description1">
+                <p class="banner-title_medium wow fadeInUp animated">世界</p>
+                <div class="banner-line_right"></div>
+            </div>
+            <p class="banner-description2 wow fadeInUp animated">触手可及</p>
+            <div class="banner-description3 wow fadeInUp animated">
+                <div class="banner-line_left"></div>
+                <p class="banner-title_small">极速&nbsp;安全&nbsp;智能</p>
+            </div>
+            <a href="/">
+                <img class="banner-download wow bounceInRight animated" src="/images/download.png" alt="点击下载坚果VPN">
+            </a>
+        </div>
+    </section>
+    <section class="slogan">
+        <p class="slogan-main wow fadeInUp animated">坚果加速器&nbsp;畅享精彩世界</p>
+        <p class="slogan-sub wow fadeInUp animated">坚果加速器全球网络服务，极速无限制的在线访问</p>
+    </section>
+
+    <section class="downloads">
+        <a href="" class="downloads-button wow bounceInLeft animated">
+            <img class="downloads-img" src="/images/ios_m.png" alt="坚果VPN iOS">
+            <div class="downloads-description">
+                <p class="downloads-title">iPhone下载</p>
+                <p class="downloads-subtitle">支持iOS9.3.3以上系统</p>
+            </div>
+        </a>
+        <a href="" class="downloads-button wow bounceInRight animated">
+            <img class="downloads-img" src="/images/android.png" alt="坚果VPN Android">
+            <div class="downloads-description">
+                <p class="downloads-title">Android下载</p>
+                <p class="downloads-subtitle">支持Android4.4以上系统</p>
+            </div>
+        </a>
+    </section>
+
+    <section class="panel wow fadeInUp animated">
+        <p class="panel-title wow bounceInRight animated">
+            <img class="panel-title_img" src="/images/alarm-white.png" alt="坚果VPN">
+            坚果客户端
+        </p>
+        <p class="panel-subtitle wow bounceInLeft animated">提供iOS、Android、Windows、Mac免费安全下载地址</p>
+        <p class="panel-subtitle wow bounceInLeft animated">(Windows、Mac客户端请请前往PC站下载)</p>
+    </section>
+
+    <p class="slogan-total wow fadeInUp animated">坚果加速&nbsp;8,000,000用户的明智之选</p>
+
+    <section class="item">
+        <p class="item-subtitle wow fadeInUp animated">极速稳定 应用秒开</p>
+        <p class="item-title wow fadeInUp animated">操作便捷 一键直连</p>
+        <section class="item-gallery">
+            <p class="item-gallery-text item-gallery-text_1 wow fadeInUp animated">便捷</p>
+            <p class="item-gallery-text item-gallery-text_2 wow fadeInUp animated">极速稳定</p>
+            <img class="item-gallery_img item-gallery_left wow fadeInUp animated" src="/images/gallery-home.png" alt="坚果VPN">
+            <img class="item-gallery_img item-gallery_right wow fadeInUp animated" src="/images/gallery-sites.png" alt="坚果VPN">
+        </section>
+    </section>
+    <section class="item">
+        <p class="item-subtitle wow fadeInUp animated">回国模式 海外首选</p>
+        <p class="item-title wow fadeInUp animated">智能加速 实时切换</p>
+        <section class="item-gallery item-gallery-reverse">
+            <p class="item-gallery-text item-gallery-text_3 wow fadeInUp animated">智能加速</p>
+            <img class="item-gallery_img item-gallery_left wow fadeInUp animated" src="/images/gallery-list.png" alt="坚果VPN">
+            <img class="item-gallery_img item-gallery_right wow fadeInUp animated" src="/images/gallery-config.png" alt="坚果VPN">
+        </section>
+    </section>
+    <section class="item">
+        <p class="item-subtitle wow fadeInUp animated">会员专线 品质服务</p>
+        <p class="item-title wow fadeInUp animated">数据加密 隐私保护</p>
+        <section class="item-gallery">
+            <p class="item-gallery-text item-gallery-text_2 wow fadeInUp animated">隐私保护</p>
+            <img class="item-gallery_img item-gallery_left wow fadeInUp animated" src="/images/gallery-chat.png" alt="坚果VPN">
+            <img class="item-gallery_img item-gallery_right wow fadeInUp animated" src="/images/gallery-member.png" alt="坚果VPN">
+        </section>
+    </section>
+    <footer class="m-footer">
+        <p>严正声明：本网站仅提供网络加速技术服务，</p>
+        <p>严禁从事任何违反中华人民共和国以及服务器所在地法律法规的行为。</p>
+        <p>Powered by 坚果加速器 @2016-2020</p>
+    </footer>    
+	<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+  function SwitchLang(val) {
+    var url = '/lang/'+val
+    var data = {
+      lang: val
+    }
+    $.ajax({
+      type:"get",
+      url:url,
+      async:true,
+      success:function(res) {
+        window.location.reload(true);
+      }
+    })
+  }    
+    </script>
+</body>
+</html>    

@@ -1,0 +1,120 @@
+.m-section2 ul {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 120px 0;
+}
+.m-section2 ul li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
+  border: 1px solid #d9d9d9;
+}
+.m-section2 ul li div {
+  height: 500px;
+  margin: 0 20px;
+  position: relative;
+}
+.m-section2 ul li div .i-icn {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 1px solid #d9d9d9;
+  z-index: 2;
+  background-color: #fff;
+}
+.m-section2 ul li div .i-icn i {
+  display: inline-block;
+  margin: 0 auto;
+}
+.m-section2 ul li div .i-icn1 i {
+  background: url(../../images/package_icn_2.png) no-repeat;
+  width: 44px;
+  height: 46px;
+  margin-left: 28px;
+  margin-top: 27px;
+}
+.m-section2 ul li div .i-icn2 i {
+  background: url(../../images/package_icn_1.png) no-repeat;
+  width: 56px;
+  height: 46px;
+  margin-left: 22px;
+  margin-top: 27px;
+}
+.m-section2 ul li div .i-icn3 i {
+  background: url(../../images/package_icn_3.png) no-repeat;
+  width: 54px;
+  height: 46px;
+  margin-left: 23px;
+  margin-top: 27px;
+}
+.m-section2 ul li div .i-btn {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #807df9;
+}
+.m-section2 ul li div .i-btn i {
+  display: block;
+  margin: 10px 15px;
+  margin-top: 28px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 16px;
+  color: #f3f1fd;
+  text-align: center;
+}
+.m-section2 ul li div h2 {
+  padding-top: 85px;
+  font-size: 24px;
+  text-align: center;
+  color: #2f305a;
+}
+.m-section2 ul li div p {
+  border-bottom: 1px solid #d9d9d9;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  color: #312e5c;
+}
+.m-section2 ul li div p i {
+  font-weight: 600;
+  color: #322f5f;
+  display: inline-block;
+  margin: 0 1px;
+}
+.m-section2 ul li div p span {
+  display: block;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.m-section2 ul li div p:last-child {
+  height: 70px;
+}
