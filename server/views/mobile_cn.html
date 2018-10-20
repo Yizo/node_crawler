@@ -6,8 +6,20 @@
     <meta name="robots" content="all">
     <script src="/js/flexible_css.js"></script>
     <script src="/js/flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/help.css"/>
     <link rel="stylesheet" type="text/css" href="/css/m-index.css" />
-    <link rel="stylesheet" href="/css/animate.dist.css">
+    <link rel="stylesheet" href="/css/animate.dist.css">   
+		<style type="text/css">
+			.m-section2 .u-snav{
+				width: 99%;
+			}
+			.m-section2 .u-ctn{
+				width: 99%;
+			}
+			.m-section2 .u-ctn .u-page ul{
+				width: 99%;
+			}
+		</style>
 </head>
 
 <body>
@@ -15,6 +27,7 @@
     <img class="logo" src="/images/p_cn_logo.png" alt="坚果VPN">
     <button class="button"><a class="lang" onclick="SwitchLang('en')">EN</a></button>
 </header>
+<div class="tab-banzhu"></div>
 <section class="banner">
         <div>
             <div class="banner-description1">
@@ -26,9 +39,6 @@
                 <div class="banner-line_left"></div>
                 <p class="banner-title_small">极速&nbsp;安全&nbsp;智能</p>
             </div>
-            <a href="/">
-                <img class="banner-download wow bounceInRight animated" src="/images/download.png" alt="点击下载坚果VPN">
-            </a>
         </div>
     </section>
     <section class="slogan">
@@ -92,27 +102,81 @@
             <img class="item-gallery_img item-gallery_right wow fadeInUp animated" src="/images/gallery-member.png" alt="坚果VPN">
         </section>
     </section>
+    <div id="sampledata" class="bringins-content m-section2" style="display: none;">
+            <ul class="u-snav">
+                    <li class="z-active">连接问题</li>
+                    <li>充值问题</li>
+                    <li>账号密码</li>
+                </ul>
+                <div class="u-ctn">
+                </div>
+    </div>   
+		 <div id="potato"><a href="https://potato.im/joinchat/ae23ae451b52bd452e0492f523038f05" target="_blank"></a></div>
     <footer class="m-footer">
         <p>严正声明：本网站仅提供网络加速技术服务，</p>
         <p>严禁从事任何违反中华人民共和国以及服务器所在地法律法规的行为。</p>
         <p>Powered by 坚果加速器 @2016-2020</p>
     </footer>    
-	<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/bringins.js"></script>
+    <script src="/js/help.js" type="text/javascript" charset="utf-8"></script>     
     <script>
-  function SwitchLang(val) {
-    var url = '/lang/'+val
-    var data = {
-      lang: val
-    }
-    $.ajax({
-      type:"get",
-      url:url,
-      async:true,
-      success:function(res) {
-        window.location.reload(true);
-      }
-    })
-  }    
+      $(function(){
+        applyMiddleware('cn');
+        function SwitchLang(val) {
+        var url = '/lang/'+val
+        var data = {
+        lang: val
+        }
+        $.ajax({
+        type:"get",
+        url:url,
+        async:true,
+        success:function(res) {
+            window.location.reload(true);
+        }
+        })
+    }     
+        
+        $('.tab-banzhu').on('touchstart', function (event) {
+            event.preventDefault();
+            $('#sampledata').bringins({
+                "position":"right",
+                "color":"fff",
+                "closeButton":"#000",
+                "width":"100%",
+                "z-index": 10
+            }, function(){
+                console.log(1)
+            });        
+        })        
+      })   
+  var h_div1 = document.getElementById('potato')
+var h_hvttop = 300;
+window.onscroll = function () {
+	HoverTreeMove(h_div1, h_hvttop)
+	//显示信息
+	var h_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;//滚动的距离
+	};
+	function HoverTreeMove(obj,top)
+	{
+	var h_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;//滚动的距离
+	var h_buchang = 20;
+	if (obj.offsetTop < h_scrollTop + top - h_buchang)
+	{
+	obj.style.top = obj.offsetTop + h_buchang + "px";
+	setTimeout(function () { HoverTreeMove(obj, top); }, 100);
+	}
+	else if (obj.offsetTop > h_scrollTop + top + h_buchang)
+	{
+	obj.style.top = (obj.offsetTop - h_buchang) + "px";
+	setTimeout(function () { HoverTreeMove(obj, top); }, 100);
+	}
+	else {
+	obj.style.top = h_scrollTop + top + "px";
+	}
+}
+HoverTreeMove(h_div1, 300)					 
     </script>
 </body>
 </html>    

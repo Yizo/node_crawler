@@ -503,3 +503,94 @@ a:hover {
 	font-size: 0.28125rem;
 	text-align: center
 }
+
+#potato {
+    width: 4.04rem;
+    height: 3.4rem;
+  position: absolute;
+  right: 10px;
+  top:200px;
+}  
+#potato:hover{
+    cursor: pointer;
+}  
+#potato a{
+    display: block;
+    width: 3.8rem;
+    height: 3.36rem;            
+    background: url(../../images/potato.png) center top no-repeat;
+    background-size: cover;
+}
+
+.tab-banzhu {
+    z-index: 1;
+    position: fixed;
+    bottom: 0.7rem;
+    left: 0.5rem;
+    cursor: pointer;
+    cursor: hand;
+		background: url(../../images/flex_help.png) no-repeat center top;
+		background-size: cover;
+		width: 1.58667rem;
+		height: 1.02667rem;
+}
+.tab-banzhu span{
+	color: #fff;
+	font-size: 0.5rem;
+}
+.bringins-content{
+	z-index: 10
+}
+.m-section2 .u-snav{
+	width: 99%;
+}
+.m-section2 .u-ctn{
+	width: 99%;
+}
+.m-section2 .u-ctn .u-page ul{
+	width: 99%;
+}
+.m-section2 .u-snav li{
+	font-size: 0.5rem;
+	padding: 0.13333rem 0;
+}
+.m-section2 .u-ctn dl dt h3{
+	font-size: 0.4rem;
+	line-height: 150%;	
+}
+.m-section2 .u-ctn dl dd h4{
+	font-size: 0.35rem;
+	line-height: 150%;	
+	padding-top: 0.13333rem;
+}
+.m-section2 .u-ctn dl dd h4 a{
+	font-size: 0.35rem;
+	line-height: 150%;	
+}
+}
+/* .m-section2 .u-ctn dl dt {
+	color: white;
+	font-size: 32px
+}
+[data-dpr="2"] .m-section2 .u-ctn dl dt {
+	font-size: 64px
+}
+[data-dpr="3"] .m-section2 .u-ctn dl dt {
+	font-size: 96px
+}
+[data-dpr="4"] .m-section2 .u-ctn dl dt {
+	font-size: 128px
+}
+.m-section2 .u-ctn dl dd h4 {
+	color: white;
+	font-size: 32px
+}
+[data-dpr="2"] .m-section2 .u-ctn dl dd h4 {
+	font-size: 64px
+}
+[data-dpr="3"] .m-section2 .u-ctn dl dd h4 {
+	font-size: 96px
+}
+[data-dpr="4"] .m-section2 .u-ctn dl dd h4 {
+	font-size: 128px
+} */

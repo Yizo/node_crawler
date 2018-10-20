@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="robots" content="all">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.herder{
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				background-color: #000000;
+				color: #fff;
+				text-align: center;
+			}
+			.footer{
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				background-color: #000000;
+				color: #fff;
+				text-align: center;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+			}
+		 .wrapper{
+				overflow:hidden;
+				height: calc(100vh - 100px);
+		 }			
+		</style>
+</head>
+
+<body>   
+		<div class="herder">头部</div>
+		<div class="go"></div>
+		<div class="wrapper">
+			<div class="content">
+				<ul>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+					<li>
+						<123></123>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">尾部</div>
+<script src="https://unpkg.com/better-scroll/dist/bscroll.min.js " type="text/javascript" charset="utf-8"></script>		
+<script src="Tween.js" type="text/javascript" charset="utf-8"></script>
+<script src="animation.js" type="text/javascript" charset="utf-8"></script>
+<script>  	
+
+function yun(num) {
+var el = document.querySelector(".showDown")
+el.style.width = num + 'px'
+}
+
+var start = 200
+var end = 1000
+var time = 1000
+
+function init() {
+Math.animation(start, end, time, 'Quad.easeIn', function(value, isEnding) {
+yun(value)
+})	
+}	 
+</script>
+<script type="text/javascript">
+	let scroll = new BScroll('.wrapper', {
+		probeType: 3,
+		pullUpLoad: {
+			threshold: 50
+		},
+		pullDownRefresh: {
+			threshold: 50,
+			stop: 20
+		}
+	})
+	function onScroll(pos) {
+		if (pos.y > 50) {
+			//console.log('上拉加载')
+		}
+	}
+	scroll.on('scroll', onScroll)	 
+	scroll.on('scrollEnd', function(pos){
+		console.log(pos.y)
+	})
+	scroll.on('pullingUp', function(params) {
+		console.log(1)
+		scroll.finishPullUp()
+	})
+</script>
+</body>
+</html>    

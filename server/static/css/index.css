@@ -47,22 +47,15 @@
   position: relative;
 }
 .m-bg-banner .u-bd span {
-  background: url(../../images/p_cn_down.png) no-repeat;
+  background: url(../../images/download.png) no-repeat;
   background-size: contain;
   position: absolute;
-  width: 478px;
-  height: 137px;
+  width: 312px;
+  height: 108px;
   bottom: 228px;
   left: 50%;
-  margin-left: -239px;
+  margin-left: -156px;
   cursor: pointer;
-}
-.m-bg-banner .u-bd span:hover {
-  background: url(../../images/p_cn_z_down.png) no-repeat;
-  transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
 }
 .m-section1 {
   height: 320px;

@@ -27,9 +27,6 @@
                 <div class="banner-line_left en"></div>
                 <p class="banner-title_small">Super-speed  ultra secure  Intelligent</p>
             </div>
-            <a href="/">
-                <img class="banner-download wow bounceInRight animated" src="/images/download-en.png" alt="downlod Nuts VPN">
-            </a>
         </div>
     </section>
     <section class="slogan">
@@ -98,6 +95,7 @@
             <img class="item-gallery_img item-gallery_right wow fadeInUp animated" src="/images/gallery-member.png" alt="坚果VPN">
         </section>
     </section>
+		<div id="potato"><a href="https://potato.im/joinchat/ae23ae451b52bd452e0492f523038f05" target="_blank"></a></div>
 <footer class="m-footer">
     <p>Strictly declare: This website only provides network acceleration technical services, and it is strictly forbidden to engage in any violation of the laws and regulations of the People's Republic of China and the location of the server.</p>
     <p>Powered by Nuts VPN @2016-2020</p>
@@ -147,6 +145,32 @@
       }
     })
   }
+  var h_div1 = document.getElementById('potato')
+var h_hvttop = 300;
+window.onscroll = function () {
+	HoverTreeMove(h_div1, h_hvttop)
+	//显示信息
+	var h_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;//滚动的距离
+	};
+	function HoverTreeMove(obj,top)
+	{
+	var h_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;//滚动的距离
+	var h_buchang = 20;
+	if (obj.offsetTop < h_scrollTop + top - h_buchang)
+	{
+	obj.style.top = obj.offsetTop + h_buchang + "px";
+	setTimeout(function () { HoverTreeMove(obj, top); }, 100);
+	}
+	else if (obj.offsetTop > h_scrollTop + top + h_buchang)
+	{
+	obj.style.top = (obj.offsetTop - h_buchang) + "px";
+	setTimeout(function () { HoverTreeMove(obj, top); }, 100);
+	}
+	else {
+	obj.style.top = h_scrollTop + top + "px";
+	}
+}
+HoverTreeMove(h_div1, 300)	
 </script>
 </body>
 

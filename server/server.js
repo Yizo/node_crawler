@@ -1,5 +1,4 @@
 import { insert, select } from './mongodb/test'
-import { read } from 'fs';
 
 const Koa = require('koa')
 const router = require('koa-router')()
@@ -16,12 +15,12 @@ app.use(statics(
     path.join(__dirname, staticPath)
 ))
 
-app.use(async (ctx, next) => {
-    await select().then(res => {
-        ctx.state.data = res
-        next()
-    })    
-})
+// app.use(async (ctx, next) => {
+//     await select().then(res => {
+//         ctx.state.data = res
+//         next()
+//     })    
+// })
 
 app.use(cors({
     exposeHeaders: ['WWW-Authenticate', 'Server-Authorization', 'Date'],
@@ -79,7 +78,6 @@ router.get('/lang/:uage', async(ctx, next) => {
 })
 
 app.use(async (ctx, next) => {
-    console.log('ctx', ctx.state.data)
     next()    
     const agentID = ctx.request.header['user-agent'].toLowerCase().match(/(iphone|ipad|ipod|android)/)
     if (agentID) {
